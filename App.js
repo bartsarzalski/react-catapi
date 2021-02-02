@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-import axios from 'axios';
+import React from 'react'
 import { Switch, Route } from 'react-router-dom';
 
 import Header from './components/header/header.component';
@@ -9,12 +8,10 @@ import SignInAndSignOut from './pages/sign-in-and-sign-out/sign-in-and-sign-out'
 
 import './App.css';
 
-class App extends Component {
-  constructor(props){
-    super(props);
-  }
+function App()  {
 
-  render() {
+
+
     return (
       <div className="main">
         <Header />
@@ -24,8 +21,6 @@ class App extends Component {
         </Switch>
       </div>
     );
-  }
-
 }
 
 export default App;

@@ -22,7 +22,7 @@ class Collection extends Component {
     componentDidMount() {
         axios.get("https://api.thecatapi.com/v1/breeds?limit=10")
         .then(response => {
-            console.log(response.data);
+            //console.log(response.data);
             this.setState({ items: response.data })
         })
         .catch(err => {

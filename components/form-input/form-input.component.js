@@ -1,10 +1,12 @@
+import React from 'react';
+
 import './form-input.styles.scss';
 
-const FormInput = () => (
-    <form className="group">
-        <input type="text"></input>
-        <input type="password"></input>
-    </form>
+const FormInput = ({ handleChange, label, ...otherProps }) => (
+    <div className="group">
+        {label}
+        <input className="form-input" onChange={handleChange} {...otherProps} />
+    </div>
 );
 
 export default FormInput;
